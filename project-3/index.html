@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Header & Controls -->
+    <header>
+        <h1>My E-Commerce Store</h1>
+        <div class="controls">
+            <input type="text" id="search-bar" placeholder="Search products...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home">Home & Decor</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <!-- Product Grid -->
+        <section id="product-grid" class="product-grid">
+            <!-- Products will be injected here by JavaScript -->
+        </section>
+
+        <!-- Cart Summary -->
+        <aside class="cart-summary">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be injected here -->
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-totals">
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Price: $<span id="total-price">0.00</span></p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
